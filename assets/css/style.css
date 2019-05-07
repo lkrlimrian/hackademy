@@ -1,0 +1,418 @@
+body {
+  overflow-x: hidden;
+}
+body .section h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+body .section p {
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 25px;
+  line-height: 1.75;
+  font-size: 20px;
+}
+body .section button {
+  height: 55px;
+  width: fit-content;
+  border-radius: 55px;
+  border: 0;
+  padding: 0 25px;
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+body .section .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .section .col > h1 {
+  margin-bottom: 100px;
+}
+body .section.header {
+  width: 100%;
+  height: 714px;
+  background-image: url(images/hdr-1.png);
+  display: flex;
+  align-items: center;
+}
+body .section.header .header-content {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+body .section.header .header-content p {
+  width: 50%;
+}
+body .section.header .header-content button {
+  color: #B80934;
+}
+body .section#sec1 {
+  background-image: url(images/bg-sect-01.png);
+  height: 1088px;
+  color: #120C45;
+}
+body .section#sec1 button {
+  background-color: #120C45;
+  color: #fff;
+}
+body .section#sec1 .ellipse {
+  position: absolute;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+}
+body .section#sec1 .ellipse.e1 {
+  background-color: #fff;
+  width: 527px;
+  height: 527px;
+  transform: translate(-50%, 88px);
+}
+body .section#sec1 .ellipse.e2 {
+  background-color: #B80934;
+  width: 100px;
+  height: 100px;
+  transform: translate(130px, 100px);
+}
+body .section#sec1 .ellipse.e3 {
+  background-color: #fff;
+  width: 74px;
+  height: 74px;
+  left: 50%;
+  transform: translateY(280px);
+}
+body .section#sec1 .ellipse.e4 {
+  background-color: #fff;
+  width: 527px;
+  height: 527px;
+  right: 0;
+  transform: translate(50%, 88px);
+}
+body .section#sec1 .ellipse.e5 {
+  background-color: #fff;
+  width: 142px;
+  height: 142px;
+  transform: translate(240px, 700px);
+}
+body .section#sec1 .ellipse.e6 {
+  background-color: #120C45;
+  width: 248px;
+  height: 248px;
+  right: 100px;
+  transform: translateY(660px);
+}
+body .section#sec1 .ellipse.e7 {
+  background-color: #120C45;
+  width: 248px;
+  height: 248px;
+  left: 0;
+  transform: translate(-50%, 960px);
+}
+body .section#sec2 {
+  height: 1088px;
+  color: #120C45;
+}
+body .section#sec2 p {
+  width: 86%;
+}
+body .section#sec2 button {
+  background-color: #120C45;
+  color: #fff;
+}
+body .section#sec2 .ellipse {
+  position: absolute;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background-color: #fff;
+}
+body .section#sec2 .ellipse.e1 {
+  width: 154px;
+  height: 154px;
+  transform: translate(130px, 100px);
+}
+body .section#sec2 .ellipse.e2 {
+  width: 74px;
+  height: 74px;
+  transform: translate(329px, 280px);
+}
+body .section#sec2 .ellipse.e3 {
+  width: 245px;
+  height: 245px;
+  right: 0;
+  transform: translate(50%, 280px);
+}
+body .section#sec2 .ellipse.e4 {
+  width: 508px;
+  height: 508px;
+  left: 0;
+  transform: translate(-50%, 340px);
+}
+body .section#sec2 .ellipse.e5 {
+  width: 442px;
+  height: 442px;
+  right: 0;
+  transform: translate(240px, 840px);
+}
+body .section#sec3 {
+  background-image: url(images/bg-sect-03.png);
+  height: 1088px;
+  color: #120C45;
+}
+body .section#sec3 p {
+  width: 90%;
+}
+body .section#sec3 button {
+  background-color: #120C45;
+  color: #fff;
+}
+body .section#sec3 .ellipse {
+  position: absolute;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background-color: #fff;
+}
+body .section#sec3 .ellipse.e1 {
+  width: 369px;
+  height: 369px;
+  left: 0;
+  transform: translate(-50%, 340px);
+}
+body .section#sec3 .ellipse.e2 {
+  width: 74px;
+  height: 74px;
+  left: 50%;
+  transform: translateY(280px);
+}
+body .section#sec3 .ellipse.e3 {
+  width: 100px;
+  height: 100px;
+  right: 100px;
+  background-color: #B80934;
+  transform: translateY(300px);
+}
+body .section#sec3 .ellipse.e4 {
+  width: 527px;
+  height: 527px;
+  right: 0;
+  transform: translate(50%, 840px);
+}
+body .section#sec4 {
+  height: 1000px;
+}
+body .section#sec4 > .col {
+  padding: 0 70px;
+}
+body .section#sec4 .col {
+  flex-direction: column;
+  justify-content: center;
+}
+body .section#sec4 .col > h1 {
+  color: #B80934;
+  text-align: center;
+}
+body .section#sec4 .col button {
+  background-color: #B80934;
+  color: #FFF;
+  text-align: center;
+  margin-top: 100px;
+}
+body .section#sec4 .col .course {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+  height: 440px;
+  position: relative;
+}
+body .section#sec4 .col .course .course-details {
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  height: fit-content;
+}
+body .section#sec4 .col .course .course-details .img-container {
+  width: 182px;
+  height: 182px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #fce1e8;
+  margin-bottom: 20px;
+}
+body .section#sec4 .col .course .course-details .img-container img {
+  width: 100%;
+}
+body .section#sec4 .col .course .course-details .course-name {
+  font-size: 20px;
+  color: #120C45;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+body .section#sec4 .col .course .course-details .facilitator {
+  font-size: 15px;
+  color: #707070;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+}
+body .section#sec4 .col .course-price {
+  background-color: #FFF;
+  border-top: 1px solid #d4d4d4;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  padding: 15px 30px;
+  bottom: 0;
+}
+body .section#sec4 .col .course-price .price {
+  font-size: 20px;
+  color: #B80934;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: bold;
+}
+body .section#sec5 {
+  background-color: #d1d1e0;
+  height: 1280px;
+  color: #120C45;
+}
+body .section#sec5 button {
+  background-color: #120C45;
+  color: #FFF;
+  margin-top: 100px;
+}
+body .section#sec5 > .col {
+  padding: 0 70px;
+}
+body .section#sec5 .col {
+  flex-direction: column;
+  justify-content: center;
+}
+body .section#sec5 .news {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+body .section#sec5 .news .img-container {
+  height: 300px;
+  overflow: hidden;
+}
+body .section#sec5 .news .img-container img {
+  width: 100%;
+}
+body .section#sec5 .news .news-details {
+  padding: 40px;
+}
+body .section#sec5 .news .news-details .news-title {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: bold;
+  color: #120C45;
+}
+body .section#sec5 .news .news-details .author {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  color: #120C45;
+  font-size: 15px;
+}
+body .section#sec5 .news .news-details .excerpt {
+  font-family: "Nunito Sans", sans-serif;
+  color: #707070;
+  font-size: 15px;
+}
+body .section#sec5 .news .news-details a {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  color: #B80934;
+}
+body .section#sec5 .news .news-details a i {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+body .section#sec6 {
+  height: 900px;
+  color: #B80934;
+}
+body .section#sec6 .testimony {
+  background-color: #FFF;
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+}
+body .section#sec6 .testimony .img-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+body .section#sec6 .testimony .testimony-details h6 {
+  color: #120C45;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+body .section#sec6 .testimony .testimony-details .org {
+  color: #120C45;
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+}
+body .section#sec6 .testimony .testimony-details .quote {
+  color: #120C45;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+}
+body .section#sec7 {
+  height: 430px;
+  background-image: url(../images/hdr-1.png);
+}
+body .section#sec7 h1 {
+  color: #FFF;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+body .section#sec7 button {
+  background-color: #B80934;
+  color: #FFF;
+}
+body footer {
+  height: 500px;
+  background-color: #120C45;
+  border-bottom: 10px solid #B80934;
+  color: #FFF;
+}
+body footer > .col {
+  align-items: center;
+  justify-content: center;
+}
+body footer > .col .col {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+body footer > .col .col h6 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+}
+body footer > .col .col p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+}
+body footer > .col .col p i {
+  color: #B80934;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: inherit;
+}
+body footer > .col .col .sns a {
+  color: #fff;
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
