@@ -1,6 +1,35 @@
 body{
     overflow-x: hidden;
 
+    nav{
+        position: absolute;
+        top: 0;
+        padding: 25px 0;
+
+        ul.nav-list{
+
+            display: inline-flex;
+            list-style-type: none;
+            margin-bottom: 0;
+            align-items: center;
+
+            li{
+                padding: 0 20px;
+                a{
+                    color: #f55f87;
+                    font-family: 'Nunito Sans', sans-serif;
+                    text-decoration: none;
+
+                    &.btn-outline{
+                        border: 1px solid #f55f87;
+                        padding: 10px 15px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+
     .section{
 
         h1{
@@ -46,7 +75,7 @@ body{
         &.header{
             width: 100%;
             height: 714px;
-            background-image: url(images/hdr-1.png);
+            background-image: url(../images/hdr-1.png);
             display: flex;
             align-items: center;
                 
@@ -70,7 +99,7 @@ body{
         }
 
         &#sec1{
-            background-image: url(images/bg-sect-01.png);
+            background-image: url(../images/bg-sect-01.png);
             height: 1088px;
             color: #120C45;
 
@@ -185,7 +214,7 @@ body{
         }
 
         &#sec3{
-            background-image: url(images/bg-sect-03.png);
+            background-image: url(../images/bg-sect-03.png);
             height: 1088px;
 
             color: #120C45;
@@ -477,10 +506,16 @@ body{
             .col{
                 align-items: flex-start !important;
                 justify-content: flex-start !important;
+
+                img{
+                    width: 90%;
+                }
     
                 h6{
                     font-family: 'Nunito Sans', sans-serif;
                     font-size: 20px;
+                    font-weight: bold;
+                    color: #B80934;
                 }
         
                 p{
@@ -499,7 +534,7 @@ body{
                 .sns{
                     a{
                         color: #fff;
-                        font-size: 50px;
+                        font-size: 40px;
                         margin-right: 20px;
                     }
                 }

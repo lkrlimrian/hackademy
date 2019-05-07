@@ -1,6 +1,30 @@
 body {
   overflow-x: hidden;
 }
+body nav {
+  position: absolute;
+  top: 0;
+  padding: 25px 0;
+}
+body nav ul.nav-list {
+  display: inline-flex;
+  list-style-type: none;
+  margin-bottom: 0;
+  align-items: center;
+}
+body nav ul.nav-list li {
+  padding: 0 20px;
+}
+body nav ul.nav-list li a {
+  color: #f55f87;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+}
+body nav ul.nav-list li a.btn-outline {
+  border: 1px solid #f55f87;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
 body .section h1 {
   font-family: "IBM Plex Serif", serif;
   font-weight: bold;
@@ -35,7 +59,7 @@ body .section .col > h1 {
 body .section.header {
   width: 100%;
   height: 714px;
-  background-image: url(images/hdr-1.png);
+  background-image: url(../images/hdr-1.png);
   display: flex;
   align-items: center;
 }
@@ -54,7 +78,7 @@ body .section.header .header-content button {
   color: #B80934;
 }
 body .section#sec1 {
-  background-image: url(images/bg-sect-01.png);
+  background-image: url(../images/bg-sect-01.png);
   height: 1088px;
   color: #120C45;
 }
@@ -159,7 +183,7 @@ body .section#sec2 .ellipse.e5 {
   transform: translate(240px, 840px);
 }
 body .section#sec3 {
-  background-image: url(images/bg-sect-03.png);
+  background-image: url(../images/bg-sect-03.png);
   height: 1088px;
   color: #120C45;
 }
@@ -394,9 +418,14 @@ body footer > .col .col {
   align-items: flex-start !important;
   justify-content: flex-start !important;
 }
+body footer > .col .col img {
+  width: 90%;
+}
 body footer > .col .col h6 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
+  font-weight: bold;
+  color: #B80934;
 }
 body footer > .col .col p {
   font-family: "Nunito Sans", sans-serif;
@@ -411,7 +440,7 @@ body footer > .col .col p i {
 }
 body footer > .col .col .sns a {
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   margin-right: 20px;
 }
 
