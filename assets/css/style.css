@@ -1,12 +1,18 @@
+@media (max-width: 1024px) {
+  .ellipses {
+    display: none;
+  }
+}
 body {
   font: 20px "Nunito Sans", sans-serif;
+  position: relative;
   overflow-x: hidden;
 }
 
 .section-title {
   font-family: "IBM Plex Serif", serif;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   font-size: 40px;
 }
 
@@ -17,10 +23,21 @@ body {
   font-size: 20px;
 }
 
+.section-image img {
+  width: 100%;
+}
+
 nav {
   position: relative;
   top: 0;
-  padding: 100px 0;
+  padding-bottom: 100px;
+}
+nav .nav-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 nav ul.nav-list {
   display: inline-flex;
@@ -29,12 +46,13 @@ nav ul.nav-list {
   align-items: center;
 }
 nav ul.nav-list li {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 nav ul.nav-list li a {
   color: #f55f87;
   font-family: "Nunito Sans", sans-serif;
   text-decoration: none;
+  font-size: 15px;
 }
 nav ul.nav-list li .btn-outline {
   border: 1px solid #f55f87;
@@ -50,6 +68,7 @@ nav ul.nav-list li .btn-outline {
   padding: 0 25px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 .section .col {
   display: flex;
@@ -65,31 +84,42 @@ nav ul.nav-list li .btn-outline {
   align-items: center;
   justify-content: center;
 }
+.section .section-content {
+  text-align: center;
+}
+.section .ellipses {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
 .section.header {
   width: 100%;
-  height: 714px;
+  padding: 100px 0;
   background-image: url(../images/hdr-1.png);
+  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.section.header .container {
+  justify-content: flex-start;
 }
 .section.header .header-content {
   color: #fff;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
 }
-.section.header .header-content p {
-  width: 50%;
+.section.header .header-content .sectino-title {
+  margin-bottom: 25px;
 }
 .section.header .header-content button {
   color: #B80934;
 }
 .section#sec1 {
   background-image: url(../images/bg-sect-01.png);
-  height: 1088px;
+  background-size: cover;
+  min-height: 100vh;
   color: #120C45;
 }
 .section#sec1 button {
@@ -105,12 +135,14 @@ nav ul.nav-list li .btn-outline {
   background-color: #fff;
   width: 527px;
   height: 527px;
+  left: 0;
   transform: translate(-50%, 88px);
 }
 .section#sec1 .ellipse.e2 {
   background-color: #B80934;
   width: 100px;
   height: 100px;
+  left: 0;
   transform: translate(130px, 100px);
 }
 .section#sec1 .ellipse.e3 {
@@ -144,11 +176,10 @@ nav ul.nav-list li .btn-outline {
   background-color: #120C45;
   width: 248px;
   height: 248px;
-  left: 0;
-  transform: translate(-50%, 960px);
+  transform: translate(-50%, 860px);
 }
 .section#sec2 {
-  height: 1088px;
+  min-height: 100vh;
   color: #120C45;
 }
 .section#sec2 button {
@@ -191,7 +222,8 @@ nav ul.nav-list li .btn-outline {
 }
 .section#sec3 {
   background-image: url(../images/bg-sect-03.png);
-  height: 1088px;
+  background-size: cover;
+  min-height: 100vh;
   color: #120C45;
 }
 .section#sec3 button {
@@ -230,7 +262,11 @@ nav ul.nav-list li .btn-outline {
   transform: translate(50%, 840px);
 }
 .section#sec4 {
-  height: 1000px;
+  padding: 100px 0;
+  color: #120C45;
+}
+.section#sec4 .section-title {
+  text-align: center;
 }
 .section#sec4 > .col {
   padding: 0 70px;
@@ -251,14 +287,15 @@ nav ul.nav-list li .btn-outline {
 }
 .section#sec4 .col .course {
   box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
-  height: 440px;
   position: relative;
+  height: 100%;
 }
 .section#sec4 .col .course .course-details {
   padding: 30px;
-  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #d4d4d4;
   position: relative;
-  height: fit-content;
+  height: calc(100% - 60px);
+  text-align: left;
 }
 .section#sec4 .col .course .course-details .img-container {
   width: 182px;
@@ -282,18 +319,19 @@ nav ul.nav-list li .btn-outline {
   font-size: 15px;
   color: #707070;
   font-family: "Nunito Sans", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   position: absolute;
   bottom: 0;
 }
 .section#sec4 .col .course-price {
   background-color: #FFF;
-  border-top: 1px solid #d4d4d4;
   border-radius: 0 0 10px 10px;
   width: 100%;
+  height: 60px;
   padding: 15px 30px;
-  position: absolute;
+  position: relative;
   bottom: 0;
+  text-align: left;
 }
 .section#sec4 .col .course-price .price {
   font-size: 20px;
@@ -303,8 +341,11 @@ nav ul.nav-list li .btn-outline {
 }
 .section#sec5 {
   background-color: #d1d1e0;
-  height: 1280px;
+  padding: 100px 0;
   color: #120C45;
+}
+.section#sec5 .section-title {
+  text-align: center;
 }
 .section#sec5 button {
   background-color: #120C45;
@@ -317,6 +358,7 @@ nav ul.nav-list li .btn-outline {
 .section#sec5 .col {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .section#sec5 .news {
   box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
@@ -331,9 +373,12 @@ nav ul.nav-list li .btn-outline {
 }
 .section#sec5 .news .img-container img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .section#sec5 .news .news-details {
   padding: 40px;
+  text-align: left;
 }
 .section#sec5 .news .news-details .news-title {
   font-family: "IBM Plex Serif", serif;
@@ -341,15 +386,18 @@ nav ul.nav-list li .btn-outline {
   color: #120C45;
 }
 .section#sec5 .news .news-details .author {
-  font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
   color: #120C45;
-  font-size: 15px;
+  font-size: 20px;
 }
 .section#sec5 .news .news-details .excerpt {
-  font-family: "Nunito Sans", sans-serif;
   color: #707070;
   font-size: 15px;
+}
+.section#sec5 .news .news-details .read-news-link {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 40px;
 }
 .section#sec5 .news .news-details a {
   font-family: "Nunito Sans", sans-serif;
@@ -361,8 +409,11 @@ nav ul.nav-list li .btn-outline {
   margin-left: 10px;
 }
 .section#sec6 {
-  height: 900px;
+  padding: 100px 0;
   color: #B80934;
+}
+.section#sec6 .section-title {
+  text-align: center;
 }
 .section#sec6 .testimony-slide.owl-carousel .owl-item img {
   height: 100%;
@@ -391,8 +442,8 @@ nav ul.nav-list li .btn-outline {
   border-radius: 10px;
 }
 .section#sec6 .testimony .img-container {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 100%;
   overflow: hidden;
   margin-bottom: 25px;
@@ -416,8 +467,12 @@ nav ul.nav-list li .btn-outline {
   line-height: 1.5;
 }
 .section#sec7 {
-  height: 430px;
+  padding: 100px 0;
   background-image: url(../images/hdr-1.png);
+  background-size: cover;
+}
+.section#sec7 .col {
+  text-align: center;
 }
 .section#sec7 h1 {
   color: #FFF;
@@ -431,40 +486,36 @@ nav ul.nav-list li .btn-outline {
 }
 
 footer {
-  height: 500px;
+  padding: 100px 0;
   background-color: #120C45;
   border-bottom: 10px solid #B80934;
   color: #FFF;
 }
-footer > .col {
-  align-items: center;
-  justify-content: center;
-}
-footer > .col .col {
+footer .col {
   align-items: flex-start !important;
   justify-content: flex-start !important;
 }
-footer > .col .col img {
+footer .col img {
   width: 90%;
 }
-footer > .col .col h6 {
+footer .col h6 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #B80934;
 }
-footer > .col .col p {
+footer .col p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   display: flex;
 }
-footer > .col .col p i {
+footer .col p i {
   color: #B80934;
   margin-right: 10px;
   font-size: 20px;
   line-height: inherit;
 }
-footer > .col .col .sns a {
+footer .col .sns a {
   color: #fff;
   font-size: 40px;
   margin-right: 20px;
