@@ -26,47 +26,52 @@ body{
     width: 100%;
 }
 
-nav{
+nav.navbar{
     position: relative;
     top: 0;
     padding-bottom: 100px;
+    width: 100%;
 
-    .nav-container{
-        height: 100%;
+    .navbar-nav{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
     }
 
-    ul.nav-list{
+    .nav-item{
+        padding: 0 10px;
 
-        display: inline-flex;
+        a.nav-link{
+            color: $primary-light;
+            font-family: $content-font;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    
+        a.btn-outline{
+            border: 1px solid $primary-light;
+            padding: 10px 15px;
+            border-radius: 50px;
+        }
+    }
 
-        list-style-type: none;
-        margin-bottom: 0;
-        align-items: center;
+    .navbar-toggler{
+        outline: none;
+        border: 1px solid $primary-light;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        text-align: center;
 
-        li{
-            padding: 0 15px;
-            a{
-                color: $primary-light;
-                font-family: $content-font;
-                text-decoration: none;
-                font-size: 15px;
-            }
-
-            .btn-outline{
-                border: 1px solid $primary-light;
-                padding: 10px 15px;
-                border-radius: 50px;
-            }
+        i{
+            color: $primary-light;
+            vertical-align: middle;
         }
     }
 }
 
 .section{
-
 
     button{
         height: 55px;
@@ -127,11 +132,11 @@ nav{
         }
             
         .header-content{
-            color: #fff;
+            color: $white;
             width: 100%;
             height: 100%;
 
-            .sectino-title{
+            .section-title{
                 margin-bottom: 25px;
             }
 
@@ -152,7 +157,7 @@ nav{
 
         button{
             background-color: $secondary-color;
-            color: #fff;
+            color: $white;
         }
 
         .ellipse{
@@ -161,7 +166,7 @@ nav{
             border-radius: 100%;
 
             &.e1{
-                background-color: #fff;
+                background-color: $white;
                 width: 527px;
                 height: 527px;
                 left: 0;
@@ -175,21 +180,21 @@ nav{
                 transform: translate(130px, 100px);
             }
             &.e3{
-                background-color: #fff;
+                background-color: $white;
                 width: 74px;
                 height: 74px;
                 left: 50%;
                 transform: translateY(280px);
             }
             &.e4{
-                background-color: #fff;
+                background-color: $white;
                 width: 527px;
                 height: 527px;
                 right: 0;
                 transform: translate(50%, 88px);
             }
             &.e5{
-                background-color: #fff;
+                background-color: $white;
                 width: 142px;
                 height: 142px;
                 transform: translate(240px, 700px);
@@ -219,14 +224,14 @@ nav{
 
         button{
             background-color: $secondary-color;
-            color: #fff;
+            color: $white;
         }
 
         .ellipse{
             position: absolute;
             box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
             border-radius: 100%;
-            background-color: #fff;
+            background-color: $white;
 
             &.e1{
                 width: 154px;
@@ -269,14 +274,14 @@ nav{
 
         button{
             background-color: $secondary-color;
-            color: #fff;
+            color: $white;
         }
 
         .ellipse{
             position: absolute;
             box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
             border-radius: 100%;
-            background-color: #fff;
+            background-color: $white;
 
             &.e1{
                 width: 369px;
@@ -330,7 +335,7 @@ nav{
 
             button{
                 background-color: $primary-color;
-                color: #FFF;
+                color: $white;
                 text-align: center;
                 margin-top: 100px;
             }
@@ -384,7 +389,7 @@ nav{
 
             .course-price{
 
-                background-color: #FFF;
+                background-color: $white;
                 border-radius: 0 0 10px 10px;
                 width: 100%;
                 height: 60px;
@@ -415,7 +420,7 @@ nav{
 
         button{
             background-color: $secondary-color;
-            color: #FFF;
+            color: $white;
             margin-top: 100px;
         }
 
@@ -432,10 +437,11 @@ nav{
         .news{
 
             box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
-            background-color: #FFF;
+            background-color: $white;
             border-radius: 10px;
             overflow: hidden;
             height: 100%;
+            margin-bottom: 25px;
 
             .img-container{
                 height: 300px;
@@ -528,7 +534,7 @@ nav{
 
         .testimony{
 
-            background-color: #FFF;
+            background-color: $white;
             box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
             padding: 30px;
             border-radius: 10px;
@@ -578,7 +584,7 @@ nav{
         }
 
         h1{
-            color: #FFF;
+            color: $white;
             font-family: $content-font;
             font-weight: bold;
             margin-bottom: 50px;
@@ -586,7 +592,7 @@ nav{
 
         button{
             background-color: $primary-color;
-            color: #FFF;
+            color: $white;
         }
     }
 }
@@ -596,7 +602,7 @@ footer{
     padding: 100px 0;
     background-color: $secondary-color;
     border-bottom: 10px solid $primary-color;
-    color: #FFF;
+    color: $white;
 
 
 
@@ -630,7 +636,7 @@ footer{
 
         .sns{
             a{
-                color: #fff;
+                color: $white;
                 font-size: 40px;
                 margin-right: 20px;
             }

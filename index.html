@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700|Nunito+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -12,29 +15,67 @@
             <div class="row">
                 <section class="section header">
                     <div class="container">
-                        <nav class="row w-100">
+                        <!-- <nav class="row w-100 navbar">
                             <a class="col-lg-4">
                                 <div class="logo">
                                     <img src="assets/images/logo.png" alt="logo"> 
                                 </div>
                             </a>
                             <div class="col-lg-8">
-                                <div class="nav-container">
-                                    <ul class=" nav-list">
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Course Details</a></li>
-                                        <li><a href="#">Tracks</a></li>
-                                        <li><a href="#" class="btn-outline"> Enroll Now</a></li>
-                                        <li><a href="#" class="btn-outline">0 <i class="fas fa-shopping-cart"></i></a></li>
-                                        <li><a href="#" class="btn-outline"><i class="fas fa-user"></i></a></li>
+                                <div class="mobile-nav">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="nav-container collapse navbar-collapse" id="navigation">
+                                    <ul class="navbar-nav nav-list">
+                                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Course Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Tracks</a></li>
+                                        <li class="nav-item"><a class="nav-link btn-outline" href="#" class="nav-link btn-outline"> Enroll Now</a></li>
+                                        <li class="nav-item"><a class="nav-link btn-outline" href="#">0 <i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="nav-item"><a class="nav-link btn-outline" href="#"><i class="fas fa-user"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
-                        </nav>
+                        </nav> -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggle-icon">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </span>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navigation">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tracks</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link btn-outline" href="#">Enroll Now</a>
+                                        </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-outline" href="#">0 <i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-outline" href="#"><i class="fas fa-user"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </nav>
                     </div>
                     <div class="row">
                         <div class="container">
-                            <div class="col col-lg-6 col-sm-8">
+                            <div class="col col-xs-8 col-lg-6">
                                 <div class="header-content">
                                     <h1 class="section-title">Keep Learning</h1>
                                     <p class="content-text">Hackademy seeks to develop a better breed of software engineer: competent, responsive, creative, self-motivated, and abreast with the latest technologies. Learn from the awesome people of a premier web and mobile development agency and jumpstart your future.</p>
@@ -48,12 +89,12 @@
             <section class="row section" id="sec1">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-sm-12 col-lg-6">
+                        <div class="col col-12 col-lg-6">
                             <div class="section-image">
                                 <img src="assets/images/1-opencourse.png" alt="opencourse">
                             </div>
                         </div>
-                        <div class="col col-sm-12 col-lg-6">
+                        <div class="col col-12 col-lg-6">
                             <div class="content">
                                 <h1 class="section-title">Open Courses for IT Professionals</h1>
                                 <p class="content-text">
@@ -77,7 +118,7 @@
             <section class="row section" id="sec2">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-sm-12 col-lg-6 order-sm-2 order-md-1">
+                        <div class="col col-12 col-sm-12 col-lg-6 order-2 order-lg-1">
                             <div class="content">
                                 <h1 class="section-title">Supplementary Courses for Academic Partners</h1>
                                 <p class="content-text">
@@ -86,7 +127,7 @@
                                 <button>Be An Academic Partner</button>
                             </div>
                         </div>
-                        <div class="col col-sm-12 col-lg-6 order-sm-1 order-md-2">
+                        <div class="col col-12 col-sm-12 col-lg-6 order-1 order-lg-2">
                             <div class="section-image">
                                 <img src="assets/images/2-supplementary....png" alt="supplementary">
                             </div>
@@ -104,12 +145,12 @@
             <section class="row section" id="sec3">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-sm-12 col-lg-6">
+                        <div class="col col-12 col-sm-12 col-lg-6">
                             <div class="section-image">
                                 <img src="assets/images/3-codingforhighschool.png" alt="coding">
                             </div>
                         </div>
-                        <div class="col col-sm-12 col-lg-6">
+                        <div class="col col-12 col-sm-12 col-lg-6">
                             <div class="content">
                                 <h1 class="section-title">Coding for High School and Out-of-School Youth</h1>
                                 <p class="content-text">
@@ -130,11 +171,11 @@
             <section class="row section" id="sec4">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-lg-12">
+                        <div class="col col-12 col-lg-12">
                             <div class="section-content">
                                 <h1 class="section-title">Courses coming your way</h1>
                                 <div class="row">
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="course">
                                             <div class="course-details">
                                                 <div class="img-container">
@@ -148,7 +189,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="course">
                                             <div class="course-details">
                                                 <div class="img-container">
@@ -162,7 +203,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="course">
                                             <div class="course-details">
                                                 <div class="img-container">
@@ -176,7 +217,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-12 col-sm-6 col-lg-3">
                                         <div class="course">
                                             <div class="course-details">
                                                 <div class="img-container">
@@ -204,7 +245,7 @@
                             <div class="section-content">
                                 <h1 class="section-title">Latest News and Event</h1>
                                 <div class="row">
-                                    <div class="col col-lg-6">
+                                    <div class="col col-12 col-lg-6">
                                         <div class="news">
                                             <div class="img-container">
                                                 <img src="assets/images/news1.png" alt="tech fridays">
@@ -221,7 +262,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col col-lg-6">
+                                    <div class="col col-12 col-lg-6">
                                         <div class="news">
                                             <div class="img-container">
                                                 <img src="assets/images/news2.png" alt="hackademyjr">
@@ -324,19 +365,19 @@
                     <div class="row">
                         <div class="col col-lg-12">
                             <div class="row w-100">
-                                <div class="col col-sm-12 col-lg-3">
+                                <div class="col col-12 col-lg-3">
                                     <div class="content-wrapper">
                                         <img src="assets/images/logo.png" alt="logo">
                                         <p>an Initiative of Ingenuity Global Consulting, Inc.</p>
                                     </div>
                                 </div>
-                                <div class="col col-sm-12 col-lg-3">
+                                <div class="col col-12 col-lg-3">
                                     <div class="content-wrapper">
                                         <h6>About us</h6>
                                         <p>Through this initiative, students will learn problem-solving and programming skills from professional software engineers, build amazing projects, and together shape the future of our country’s digital economy.</p>
                                     </div>
                                 </div>
-                                <div class="col col-sm-12 col-lg-3">
+                                <div class="col col-12 col-lg-3">
                                     <div class="content-wrapper">
                                         <h6>Contact Us</h6>
                                         <p><i class="fas fa-map-marker-alt"></i>1.8 Centron Building Quirino St. Davao City, Philippines</p>
@@ -344,7 +385,7 @@
                                         <p><i class="fas fa-envelope"></i>info@hackademy.ph</p>
                                     </div>
                                 </div>
-                                <div class="col col-sm-12 col-lg-3">
+                                <div class="col col-12 col-lg-3">
                                     <div class="content-wrapper">
                                         <h6>Follow Us</h6>
                                         <div class="sns">
@@ -362,6 +403,8 @@
             </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="assets/js/owl.carousel.js"></script>
         <script src="assets/js/script.js"></script>
     </body>

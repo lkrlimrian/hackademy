@@ -1,5 +1,77 @@
-@media (max-width: 1024px){
-    .ellipses{
-        display: none;
+@media (max-width: 480px){
+    
+}
+
+@media (max-width: 767px){
+    .section{
+        padding: 100px 25px;
+
+        &.header{
+            padding: 100px 25px !important;
+        }
+
+        .section-title{
+            font-size: 30px;
+        }
+
+        &#sec1, &#sec2, &#sec3{
+            min-height: unset;
+        }
+    }
+
+    
+}
+
+@media (max-width: 991px){
+
+    .section{
+        padding: 100px 25px;
+
+        &.header{
+            padding: 100px 25px !important;
+        }
+
+        .section-title{
+            font-size: 30px;
+        }
+
+        .section-image{
+            margin-bottom: 50px;
+        }
+
+        &#sec1, &#sec2, &#sec3{
+            min-height: unset !important;
+        }
+
+        .content{
+            text-align: center;
+        }
+    }
+
+    .course{
+
+        height: calc(100% - 25px) !important;
+        margin: 25px !important;
+
+        .course-name, .price{
+            margin-bottom: 10px;
+        }
+
+        .facilitator{
+            bottom: 0;
+        }
+
+        .img-container{
+            margin: 10px auto !important;
+        }
+    }
+    .news{
+        .img-container{
+            height: 150px !important;
+        }
+
+        .news-title{
+            font-size: 30px;
+        }
     }
 }
