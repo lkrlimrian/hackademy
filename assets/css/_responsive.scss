@@ -14,7 +14,7 @@
             font-size: 30px;
         }
 
-        &#sec1, &#sec2, &#sec3{
+        &.sec1, &.sec2, &.sec3{
             min-height: unset;
         }
     }
@@ -39,7 +39,7 @@
             margin-bottom: 50px;
         }
 
-        &#sec1, &#sec2, &#sec3{
+        &.sec1, &.sec2, &.sec3{
             min-height: unset !important;
         }
 

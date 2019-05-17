@@ -5,7 +5,7 @@
       padding: 100px 25px !important; }
     .section .section-title {
       font-size: 30px; }
-    .section#sec1, .section#sec2, .section#sec3 {
+    .section.sec1, .section.sec2, .section.sec3 {
       min-height: unset; } }
 @media (max-width: 991px) {
   .section {
@@ -16,7 +16,7 @@
       font-size: 30px; }
     .section .section-image {
       margin-bottom: 50px; }
-    .section#sec1, .section#sec2, .section#sec3 {
+    .section.sec1, .section.sec2, .section.sec3 {
       min-height: unset !important; }
     .section .content {
       text-align: center; }
@@ -40,7 +40,7 @@ body {
   position: relative;
   overflow-x: hidden; }
 
-.section-title {
+.section-title h1 {
   font-family: "IBM Plex Serif", serif;
   font-weight: bold;
   margin-bottom: 50px;
@@ -87,6 +87,83 @@ nav.navbar {
       color: #f55f87;
       vertical-align: middle; }
 
+.section.header {
+  width: 100%;
+  padding: 100px 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .section.header .container {
+    justify-content: flex-start; }
+  .section.header .header-content {
+    color: #ffffff;
+    width: 100%;
+    height: 100%; }
+    .section.header .header-content .section-title {
+      margin-bottom: 25px; }
+    .section.header .header-content button {
+      color: #B80934; }
+
+.landing .section.header {
+  background-image: url(../images/hdr-1.png); }
+
+.list-of-courses .section.header {
+  background-image: url(../images/bg-sect-01.png); }
+  .list-of-courses .section.header .section-title {
+    color: #B80934;
+    font-weight: 700; }
+.list-of-courses .course {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px; }
+  .list-of-courses .course.mint {
+    border-bottom: 10px solid #98e69a; }
+    .list-of-courses .course.mint .img-container {
+      background-color: #98e69a !important; }
+  .list-of-courses .course.orange {
+    border-bottom: 10px solid #ffb174; }
+    .list-of-courses .course.orange .img-container {
+      background-color: #ffb174 !important; }
+  .list-of-courses .course.blue {
+    border-bottom: 10px solid #91c8ff; }
+    .list-of-courses .course.blue .img-container {
+      background-color: #91c8ff !important; }
+  .list-of-courses .course.purple {
+    border-bottom: 10px solid #e4b1ff; }
+    .list-of-courses .course.purple .img-container {
+      background-color: #e4b1ff !important; }
+  .list-of-courses .course.yellow {
+    border-bottom: 10px solid #ffbb00; }
+    .list-of-courses .course.yellow .img-container {
+      background-color: #ffbb00 !important; }
+  .list-of-courses .course.pink {
+    border-bottom: 10px solid #ff8fac; }
+    .list-of-courses .course.pink .img-container {
+      background-color: #ff8fac !important; }
+  .list-of-courses .course .course-details {
+    padding: 40px 40px 30px 40px;
+    text-align: center;
+    border: none !important; }
+    .list-of-courses .course .course-details .img-container {
+      margin: 40px auto !important;
+      width: 50% !important;
+      height: unset !important;
+      overflow: hidden; }
+      .list-of-courses .course .course-details .img-container:after {
+        content: "";
+        display: block;
+        padding-bottom: 10%; }
+  .list-of-courses .course .course-name {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center; }
+  .list-of-courses .course .course-description {
+    text-align: center; }
+
 .section button {
   height: 55px;
   width: fit-content;
@@ -104,7 +181,6 @@ nav.navbar {
   .section .col > h1 {
     margin-bottom: 100px; }
 .section .container {
-  display: flex;
   align-items: center;
   justify-content: center; }
 .section .section-content {
@@ -114,195 +190,145 @@ nav.navbar {
   width: 100%;
   height: 100%;
   display: none; }
-.section.header {
-  width: 100%;
-  padding: 100px 0;
-  background-image: url(../images/hdr-1.png);
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-  .section.header .container {
-    justify-content: flex-start; }
-  .section.header .header-content {
-    color: #ffffff;
-    width: 100%;
-    height: 100%; }
-    .section.header .header-content .section-title {
-      margin-bottom: 25px; }
-    .section.header .header-content button {
-      color: #B80934; }
-.section#sec1 {
+.section.sec1 {
   background-image: url(../images/bg-sect-01.png);
   background-size: cover;
   min-height: 100vh;
   color: #120C45; }
-  .section#sec1 button {
+  .section.sec1 button {
     background-color: #120C45;
     color: #ffffff; }
-  .section#sec1 .ellipse {
+  .section.sec1 .ellipse {
     position: absolute;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
     border-radius: 100%; }
-    .section#sec1 .ellipse.e1 {
+    .section.sec1 .ellipse.e1 {
       background-color: #ffffff;
       width: 527px;
       height: 527px;
       left: 0;
       transform: translate(-50%, 88px); }
-    .section#sec1 .ellipse.e2 {
+    .section.sec1 .ellipse.e2 {
       background-color: #B80934;
       width: 100px;
       height: 100px;
       left: 0;
       transform: translate(130px, 100px); }
-    .section#sec1 .ellipse.e3 {
+    .section.sec1 .ellipse.e3 {
       background-color: #ffffff;
       width: 74px;
       height: 74px;
       left: 50%;
       transform: translateY(280px); }
-    .section#sec1 .ellipse.e4 {
+    .section.sec1 .ellipse.e4 {
       background-color: #ffffff;
       width: 527px;
       height: 527px;
       right: 0;
       transform: translate(50%, 88px); }
-    .section#sec1 .ellipse.e5 {
+    .section.sec1 .ellipse.e5 {
       background-color: #ffffff;
       width: 142px;
       height: 142px;
       transform: translate(240px, 700px); }
-    .section#sec1 .ellipse.e6 {
+    .section.sec1 .ellipse.e6 {
       background-color: #120C45;
       width: 248px;
       height: 248px;
       right: 100px;
       transform: translateY(660px); }
-    .section#sec1 .ellipse.e7 {
+    .section.sec1 .ellipse.e7 {
       background-color: #120C45;
       width: 248px;
       height: 248px;
       transform: translate(-50%, 860px); }
-.section#sec2 {
+.section.sec2 {
   min-height: 100vh;
   color: #120C45; }
-  .section#sec2 button {
+  .section.sec2 button {
     background-color: #120C45;
     color: #ffffff; }
-  .section#sec2 .ellipse {
+  .section.sec2 .ellipse {
     position: absolute;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
     border-radius: 100%;
     background-color: #ffffff; }
-    .section#sec2 .ellipse.e1 {
+    .section.sec2 .ellipse.e1 {
       width: 154px;
       height: 154px;
       transform: translate(130px, 100px); }
-    .section#sec2 .ellipse.e2 {
+    .section.sec2 .ellipse.e2 {
       width: 74px;
       height: 74px;
       transform: translate(329px, 280px); }
-    .section#sec2 .ellipse.e3 {
+    .section.sec2 .ellipse.e3 {
       width: 245px;
       height: 245px;
       right: 0;
       transform: translate(50%, 280px); }
-    .section#sec2 .ellipse.e4 {
+    .section.sec2 .ellipse.e4 {
       width: 508px;
       height: 508px;
       left: 0;
       transform: translate(-50%, 340px); }
-    .section#sec2 .ellipse.e5 {
+    .section.sec2 .ellipse.e5 {
       width: 442px;
       height: 442px;
       right: 0;
       transform: translate(240px, 840px); }
-.section#sec3 {
+.section.sec3 {
   background-image: url(../images/bg-sect-03.png);
   background-size: cover;
   min-height: 100vh;
   color: #120C45; }
-  .section#sec3 button {
+  .section.sec3 button {
     background-color: #120C45;
     color: #ffffff; }
-  .section#sec3 .ellipse {
+  .section.sec3 .ellipse {
     position: absolute;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
     border-radius: 100%;
     background-color: #ffffff; }
-    .section#sec3 .ellipse.e1 {
+    .section.sec3 .ellipse.e1 {
       width: 369px;
       height: 369px;
       left: 0;
       transform: translate(-50%, 340px); }
-    .section#sec3 .ellipse.e2 {
+    .section.sec3 .ellipse.e2 {
       width: 74px;
       height: 74px;
       left: 50%;
       transform: translateY(280px); }
-    .section#sec3 .ellipse.e3 {
+    .section.sec3 .ellipse.e3 {
       width: 100px;
       height: 100px;
       right: 100px;
       background-color: #B80934;
       transform: translateY(300px); }
-    .section#sec3 .ellipse.e4 {
+    .section.sec3 .ellipse.e4 {
       width: 527px;
       height: 527px;
       right: 0;
       transform: translate(50%, 840px); }
-.section#sec4 {
+.section.sec4 {
   padding: 100px 0;
   color: #120C45; }
-  .section#sec4 .section-title {
+  .section.sec4 .section-title {
     text-align: center; }
-  .section#sec4 > .col {
+  .section.sec4 > .col {
     padding: 0 70px; }
-  .section#sec4 .col {
+  .section.sec4 .col {
     flex-direction: column;
     justify-content: center; }
-    .section#sec4 .col > h1 {
+    .section.sec4 .col > h1 {
       color: #B80934;
       text-align: center; }
-    .section#sec4 .col button {
+    .section.sec4 .col button {
       background-color: #B80934;
       color: #ffffff;
       text-align: center;
       margin-top: 100px; }
-    .section#sec4 .col .course {
-      box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
-      position: relative;
-      height: 100%; }
-      .section#sec4 .col .course .course-details {
-        padding: 30px;
-        border-bottom: 1px solid #d4d4d4;
-        position: relative;
-        height: calc(100% - 60px);
-        text-align: left; }
-        .section#sec4 .col .course .course-details .img-container {
-          width: 182px;
-          height: 182px;
-          border-radius: 100%;
-          overflow: hidden;
-          background-color: #fce1e8;
-          margin: 10px 10px 20px 10px; }
-          .section#sec4 .col .course .course-details .img-container img {
-            width: 100%; }
-        .section#sec4 .col .course .course-details .course-name {
-          font-size: 20px;
-          color: #120C45;
-          font-family: "IBM Plex Serif", serif;
-          font-weight: bold;
-          margin-bottom: 20px; }
-        .section#sec4 .col .course .course-details .facilitator {
-          font-size: 15px;
-          color: #707070;
-          font-family: "Nunito Sans", sans-serif;
-          margin-bottom: 30px;
-          position: absolute;
-          bottom: 0; }
-    .section#sec4 .col .course-price {
+    .section.sec4 .col .course-price {
       background-color: #ffffff;
       border-radius: 0 0 10px 10px;
       width: 100%;
@@ -311,126 +337,157 @@ nav.navbar {
       position: relative;
       bottom: 0;
       text-align: left; }
-      .section#sec4 .col .course-price .price {
+      .section.sec4 .col .course-price .price {
         font-size: 20px;
         color: #B80934;
         font-family: "IBM Plex Serif", serif;
         font-weight: bold; }
-.section#sec5 {
+.section .course {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .section .course .course-details {
+    padding: 30px;
+    border-bottom: 1px solid #d4d4d4;
+    position: relative;
+    height: calc(100% - 60px);
+    text-align: left; }
+    .section .course .course-details .img-container {
+      width: 182px;
+      height: 182px;
+      border-radius: 100%;
+      overflow: hidden;
+      background-color: #fce1e8;
+      margin: 10px 10px 20px 10px; }
+      .section .course .course-details .img-container img {
+        width: 100%; }
+    .section .course .course-details .course-name {
+      font-size: 20px;
+      color: #120C45;
+      font-family: "IBM Plex Serif", serif;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .section .course .course-details .facilitator {
+      font-size: 15px;
+      color: #707070;
+      font-family: "Nunito Sans", sans-serif;
+      margin-bottom: 30px;
+      position: absolute;
+      bottom: 0; }
+.section.sec5 {
   background-color: #d1d1e0;
   padding: 100px 0;
   color: #120C45; }
-  .section#sec5 .section-title {
+  .section.sec5 .section-title {
     text-align: center; }
-  .section#sec5 button {
+  .section.sec5 button {
     background-color: #120C45;
     color: #ffffff;
     margin-top: 100px; }
-  .section#sec5 > .col {
+  .section.sec5 > .col {
     padding: 0 70px; }
-  .section#sec5 .col {
+  .section.sec5 .col {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .section#sec5 .news {
+  .section.sec5 .news {
     box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     height: 100%;
-    margin-bottom: 25px;
-    }
-    .section#sec5 .news .img-container {
+    margin-bottom: 25px; }
+    .section.sec5 .news .img-container {
       height: 300px;
       overflow: hidden; }
-      .section#sec5 .news .img-container img {
+      .section.sec5 .news .img-container img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
-    .section#sec5 .news .news-details {
+    .section.sec5 .news .news-details {
       padding: 40px;
       text-align: left; }
-      .section#sec5 .news .news-details .news-title {
+      .section.sec5 .news .news-details .news-title {
         font-family: "IBM Plex Serif", serif;
         font-weight: bold;
         color: #120C45; }
-      .section#sec5 .news .news-details .author {
+      .section.sec5 .news .news-details .author {
         font-weight: bold;
         color: #120C45;
         font-size: 20px; }
-      .section#sec5 .news .news-details .excerpt {
+      .section.sec5 .news .news-details .excerpt {
         color: #707070;
         font-size: 15px; }
-      .section#sec5 .news .news-details .read-news-link {
-        position: relative;
+      .section.sec5 .news .news-details .read-news-link {
+        position: absolute;
         bottom: 0;
-        padding-bottom: 40px;
-        }
-      .section#sec5 .news .news-details a {
+        padding-bottom: 40px; }
+      .section.sec5 .news .news-details a {
         font-family: "Nunito Sans", sans-serif;
         font-weight: bold;
         color: #B80934; }
-        .section#sec5 .news .news-details a i {
+        .section.sec5 .news .news-details a i {
           vertical-align: middle;
           margin-left: 10px; }
-.section#sec6 {
+.section.sec6 {
   padding: 100px 0;
   color: #B80934; }
-  .section#sec6 .section-title {
+  .section.sec6 .section-title {
     text-align: center; }
-  .section#sec6 .testimony-slide.owl-carousel .owl-item img {
+  .section.sec6 .testimony-slide.owl-carousel .owl-item img {
     height: 100%; }
-  .section#sec6 .testimony-slide .owl-stage-outer {
+  .section.sec6 .testimony-slide .owl-stage-outer {
     height: 100%; }
-  .section#sec6 .testimony-slide .owl-dots {
+  .section.sec6 .testimony-slide .owl-dots {
     text-align: center;
     padding: 15px 0; }
-    .section#sec6 .testimony-slide .owl-dots .owl-dot {
+    .section.sec6 .testimony-slide .owl-dots .owl-dot {
       width: 15px;
       height: 15px;
       border-radius: 100%;
       background-color: #d4d4d4;
       margin: 0 10px; }
-    .section#sec6 .testimony-slide .owl-dots .active {
+    .section.sec6 .testimony-slide .owl-dots .active {
       background-color: #B80934; }
-  .section#sec6 .testimony {
+  .section.sec6 .testimony {
     background-color: #ffffff;
     box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 10px; }
-    .section#sec6 .testimony .img-container {
+    .section.sec6 .testimony .img-container {
       width: 75px;
       height: 75px;
       border-radius: 100%;
       overflow: hidden;
       margin-bottom: 25px; }
-    .section#sec6 .testimony .testimony-details h6 {
+    .section.sec6 .testimony .testimony-details h6 {
       color: #120C45;
       font-family: "IBM Plex Serif", serif;
       font-weight: bold;
       font-size: 20px; }
-    .section#sec6 .testimony .testimony-details .org {
+    .section.sec6 .testimony .testimony-details .org {
       color: #120C45;
       font-size: 15px;
       font-family: "Nunito Sans", sans-serif; }
-    .section#sec6 .testimony .testimony-details .quote {
+    .section.sec6 .testimony .testimony-details .quote {
       color: #120C45;
       font-family: "Nunito Sans", sans-serif;
       font-weight: bold;
       font-size: 20px;
       line-height: 1.5; }
-.section#sec7 {
+.section.cta-row {
   padding: 100px 0;
   background-image: url(../images/hdr-1.png);
   background-size: cover; }
-  .section#sec7 .col {
+  .section.cta-row .col {
     text-align: center; }
-  .section#sec7 h1 {
+  .section.cta-row h1 {
     color: #ffffff;
     font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
     margin-bottom: 50px; }
-  .section#sec7 button {
+  .section.cta-row button {
     background-color: #B80934;
     color: #ffffff; }
 

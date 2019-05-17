@@ -9,10 +9,12 @@ body{
 }
 
 .section-title{
-    font-family: $heading-font;
-    font-weight: bold;
-    margin-bottom: 50px;
-    font-size: 40px;
+    h1{
+        font-family: $heading-font;
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
 }
 
 .content-text{
@@ -72,6 +74,134 @@ nav.navbar{
 }
 
 .section{
+    &.header{
+        width: 100%;
+        // height: 714px;
+        padding: 100px 0;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .container{
+            justify-content: flex-start;
+        }
+            
+        .header-content{
+            color: $white;
+            width: 100%;
+            height: 100%;
+
+            .section-title{
+                margin-bottom: 25px;
+            }
+
+            button{
+                color: $primary-color;
+            }
+            
+        }
+    }
+}
+
+.landing{
+    .section.header{
+        background-image: url(../images/hdr-1.png);
+    }
+}
+
+.list-of-courses{
+    .section.header{
+        background-image: url(../images/bg-sect-01.png);
+
+        .section-title{
+            color: $primary-color;
+            font-weight: 700;
+        }
+    }
+
+    .course{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: $white;
+        margin-bottom: 30px;
+        
+        &.mint{
+            border-bottom: 10px solid #98e69a;
+            .img-container{
+                background-color: #98e69a !important;
+            }
+        }
+
+        &.orange{
+            border-bottom: 10px solid #ffb174;
+            .img-container{
+                background-color: #ffb174 !important;
+            }
+        }
+
+        &.blue{
+            border-bottom: 10px solid #91c8ff;
+            .img-container{
+                background-color: #91c8ff !important;
+            }
+        }
+
+        &.purple{
+            border-bottom: 10px solid #e4b1ff;
+            .img-container{
+                background-color: #e4b1ff !important;
+            }
+        }
+
+        &.yellow{
+            border-bottom: 10px solid #ffbb00;
+            .img-container{
+                background-color: #ffbb00 !important;
+            }
+        }
+
+        &.pink{
+            border-bottom: 10px solid #ff8fac;
+            .img-container{
+                background-color: #ff8fac !important;
+            }
+        }
+        
+
+        .course-details{
+            padding: 40px 40px 30px 40px;
+            text-align: center;
+            border: none !important;
+
+            .img-container{
+                margin: 40px auto!important;
+                width: 50% !important;
+                height: unset !important;
+                overflow: hidden;
+
+                &:after{
+                    content: "";
+                    display: block;
+                    padding-bottom: 10%;
+                }
+
+            }
+        }
+        .course-name{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .course-description{
+            text-align: center;
+        }
+    }
+}
+
+.section{
 
     button{
         height: 55px;
@@ -100,7 +230,7 @@ nav.navbar{
     }
 
     .container{
-        display: flex;
+        // display: flex;  
         align-items: center;
         justify-content: center;
     }
@@ -117,37 +247,9 @@ nav.navbar{
         display: none;
     }
 
-    &.header{
-        width: 100%;
-        // height: 714px;
-        padding: 100px 0;
-        background-image: url(../images/hdr-1.png);
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    
 
-        .container{
-            justify-content: flex-start;
-        }
-            
-        .header-content{
-            color: $white;
-            width: 100%;
-            height: 100%;
-
-            .section-title{
-                margin-bottom: 25px;
-            }
-
-            button{
-                color: $primary-color;
-            }
-            
-        }
-    }
-
-    &#sec1{
+    &.sec1{
         background-image: url(../images/bg-sect-01.png);
         background-size: cover;
         min-height: 100vh;
@@ -217,7 +319,7 @@ nav.navbar{
 
     }
 
-    &#sec2{
+    &.sec2{
         min-height: 100vh;
         // padding: 100px 0;
         color: $secondary-color;
@@ -264,7 +366,7 @@ nav.navbar{
         }
     }
 
-    &#sec3{
+    &.sec3{
         background-image: url(../images/bg-sect-03.png);
         background-size: cover;
         min-height: 100vh;
@@ -311,7 +413,7 @@ nav.navbar{
         }
     }
 
-    &#sec4{
+    &.sec4{
         // height: 1000px; 
         padding: 100px 0;
         color: $secondary-color;
@@ -340,52 +442,7 @@ nav.navbar{
                 margin-top: 100px;
             }
 
-            .course{
-                box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
-                // width: 260px;
-                // height: 440px;
-                position: relative;
-                height: 100%;
-
-                .course-details{
-
-                    padding: 30px;
-                    border-bottom: 1px solid $light-gray;
-                    position: relative;
-                    height: calc(100% - 60px);
-                    text-align: left;
-
-                    .img-container{
-                        width: 182px;
-                        height: 182px;
-                        border-radius:100%;
-                        overflow: hidden;
-                        background-color: #fce1e8;
-                        margin: 10px 10px 20px 10px;
-
-                        img{
-                            width: 100%;
-                        }
-                    }
-
-                    .course-name{
-                        font-size: 20px;
-                        color: $secondary-color;
-                        font-family: $heading-font;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                    }
-
-                    .facilitator{
-                        font-size: 15px;
-                        color: $gray;
-                        font-family: $content-font;
-                        margin-bottom: 30px;
-                        position: absolute;
-                        bottom: 0;
-                    }
-                }
-            }
+            
 
             .course-price{
 
@@ -408,7 +465,55 @@ nav.navbar{
         }
     }
 
-    &#sec5{
+    .course{
+        box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+        // width: 260px;
+        // height: 440px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .course-details{
+
+            padding: 30px;
+            border-bottom: 1px solid $light-gray;
+            position: relative;
+            height: calc(100% - 60px);
+            text-align: left;
+
+            .img-container{
+                width: 182px;
+                height: 182px;
+                border-radius:100%;
+                overflow: hidden;
+                background-color: #fce1e8;
+                margin: 10px 10px 20px 10px;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .course-name{
+                font-size: 20px;
+                color: $secondary-color;
+                font-family: $heading-font;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .facilitator{
+                font-size: 15px;
+                color: $gray;
+                font-family: $content-font;
+                margin-bottom: 30px;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    &.sec5{
         background-color: #d1d1e0;
         // height: 1280px;
         padding: 100px 0;
@@ -496,7 +601,7 @@ nav.navbar{
         }
     }
 
-    &#sec6{
+    &.sec6{
         // height: 900px;
         padding: 100px 0;
         color: $primary-color;
@@ -573,7 +678,7 @@ nav.navbar{
         }
     }
 
-    &#sec7{
+    &.cta-row{
         // height: 430px;
         padding: 100px 0;
         background-image: url(../images/hdr-1.png);
