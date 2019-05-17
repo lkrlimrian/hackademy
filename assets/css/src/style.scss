@@ -719,10 +719,10 @@ footer{
             width: 90%;
         }
 
-        h6{
+        h1.list-heading{
             font-family: $content-font;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 0.75rem;
+            font-weight: 700;
             color: $primary-color;
         }
 

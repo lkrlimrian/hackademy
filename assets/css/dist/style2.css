@@ -1,0 +1,244 @@
+body {
+  font: 20px "Nunito Sans", sans-serif;
+  overflow-x: hidden; }
+
+h1.section-title {
+  font-size: 2.5rem;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  margin-bottom: 50px; }
+
+p.section-description {
+  margin-bottom: 50px;
+  line-height: 1.75; }
+
+a.btn-link {
+  width: fit-content;
+  border-radius: 55px;
+  border: 0;
+  padding: 10px 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: #120C45;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease; }
+  a.btn-link:hover {
+    background-color: #120C45;
+    color: #ffffff;
+    text-decoration: none;
+    filter: brightness(75%); }
+
+nav.navbar {
+  padding: 100px 0 50px;
+  position: absolute;
+  width: 100%;
+  top: 0; }
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .navbar-nav .nav-item {
+    padding: 0 10px; }
+    .navbar-nav .nav-item a.nav-link {
+      color: #f55f87;
+      font-family: "Nunito Sans", sans-serif;
+      text-decoration: none;
+      font-size: 15px; }
+    .navbar-nav .nav-item a.btn-outline {
+      border: 1px solid #f55f87;
+      padding: 10px 15px;
+      border-radius: 50px; }
+
+section.banner {
+  padding: 250px 0 100px;
+  background-image: url(../../images/hdr-1.png);
+  background-size: cover;
+  color: #ffffff; }
+  section.banner .btn-link {
+    background-color: #ffffff;
+    color: #B80934; }
+
+section.section {
+  padding: 100px 0;
+  display: flex;
+  align-items: center; }
+  section.section.full-height {
+    min-height: 100vh; }
+  section.section .container {
+    height: 100%;
+    align-items: center; }
+  section.section.sec1 {
+    background-image: url(../../images/bg-sect-01.png); }
+  section.section.sec3 {
+    background-image: url(../../images//bg-sect-03.png); }
+  section.section.latest-news {
+    background-color: #d1d1e0; }
+  section.section .button-row {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center; }
+
+.course-list {
+  display: flex;
+  margin-bottom: 100px; }
+
+.course {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+  height: 100%; }
+  .course .course-image-container {
+    padding: 30px 40px; }
+    .course .course-image-container .wrap {
+      background-color: #fce1e8;
+      border-radius: 100%;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 100%; }
+      .course .course-image-container .wrap img {
+        width: 150%;
+        height: auto;
+        object-fit: cover;
+        object-position: center; }
+  .course .course-name {
+    font-size: 1.25rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    padding: 0 30px;
+    margin-bottom: 25px;
+    min-height: 4.5rem; }
+  .course .course-facilitator {
+    color: #707070;
+    font-size: 1rem;
+    padding: 0 30px; }
+  .course .course-price {
+    border-top: 1px solid #d4d4d4; }
+    .course .course-price .price {
+      color: #B80934;
+      font-family: "IBM Plex Serif", serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 15px 30px; }
+
+.news-list .news {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+  .news-list .news .news-image-container {
+    max-height: 300px; }
+    .news-list .news .news-image-container img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .news-list .news .news-title {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 2rem;
+    font-weight: 700; }
+  .news-list .news .news-author {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 25px; }
+  .news-list .news .news-description-container {
+    padding: 40px; }
+  .news-list .news .news-excerpt {
+    font-size: 1rem;
+    color: #707070; }
+  .news-list .news .read-news a {
+    color: #B80934;
+    text-decoration: none;
+    font-weight: 700; }
+
+.testimonies .testimony-slide.owl-carousel .owl-item img {
+  height: 100%; }
+.testimonies .testimony-slide .owl-stage-outer {
+  height: 100%; }
+.testimonies .testimony-slide .owl-dots {
+  text-align: center;
+  padding: 15px 0; }
+  .testimonies .testimony-slide .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #d4d4d4;
+    margin: 0 10px; }
+  .testimonies .testimony-slide .owl-dots .active {
+    background-color: #B80934; }
+.testimonies .testimony {
+  background-color: #ffffff;
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px; }
+  .testimonies .testimony .img-container {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin: 20px auto;
+    }
+  .testimonies .testimony .testimony-details h6 {
+    color: #120C45;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: bold;
+    font-size: 20px; }
+  .testimonies .testimony .testimony-details .org {
+    color: #120C45;
+    font-size: 15px;
+    font-family: "Nunito Sans", sans-serif; }
+  .testimonies .testimony .testimony-details .quote {
+    color: #120C45;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5; }
+
+.cta-row {
+  background-image: url(../../images/hdr-1.png);
+  color: #ffffff; }
+  .cta-row .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .cta-row .section-title {
+    font-family: "Nunito Sans", sans-serif; }
+  .cta-row .btn-link {
+    background-color: #B80934; }
+
+footer {
+  padding: 100px 0;
+  background-color: #120C45;
+  border-bottom: 10px solid #B80934;
+  color: #ffffff; }
+  footer .col {
+    align-items: flex-start !important;
+    justify-content: flex-start !important; }
+    footer .col .logo embed {
+      width: 90%; }
+    footer .col h1.list-heading {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #B80934; }
+    footer .col p {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1rem;
+      display: flex; }
+      footer .col p i {
+        color: #B80934;
+        margin-right: 10px;
+        font-size: 20px;
+        line-height: inherit; }
+    footer .col .sns a {
+      color: #ffffff;
+      font-size: 40px;
+      margin-right: 20px; }
+
+/*# sourceMappingURL=style2.css.map */

@@ -1,0 +1,47 @@
+@media only screen and (min-width: 320px) {
+  body {
+    font-size: 16px; }
+
+  p.section-description {
+    line-height: 1.25; }
+
+  .navbar-brand {
+    width: 75%; }
+    .navbar-brand embed {
+      width: 100%; }
+
+  .navbar-toggler {
+    color: #B80934;
+    border: 1px solid #B80934;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    outline: none; }
+
+  section.section {
+    padding: 50px 20px;
+    text-align: center; }
+    section.section h1.section-title {
+      font-size: 1.75rem; }
+    section.section .section-image {
+      padding: 25px; }
+      section.section .section-image img {
+        width: 100%; }
+
+  .news-list .news {
+    margin: 0 25px; }
+    .news-list .news h2.news-title {
+      font-size: 1.5rem;
+      margin-bottom: 25px; }
+    .news-list .news h3.news-author {
+      font-size: 1rem; }
+    .news-list .news div.news-description-container {
+      padding: 25px; } }
+.testimonies .testimony .img-container {
+  margin: 0 auto; }
+
+/*# sourceMappingURL=responsive.css.map */
