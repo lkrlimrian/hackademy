@@ -17,8 +17,8 @@
         }
     }
     .navbar-toggler{
-        color: $primary-color;
-        border: 1px solid $primary-color;
+        color: $primary-light;
+        border: 2px solid $primary-light;
         width: 30px;
         height: 30px;
         padding: 0;
@@ -72,11 +72,25 @@
         }
     }
 
+    ul.navbar-nav{
+        background: $secondary-color;
+        z-index: 9;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        align-items: flex-start;
+    }
+
 }
 
 @media only screen and (min-width: 768px){
     .navbar-brand{
         width: auto;
+    }
+
+    ul.navbar-nav{
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 100px;
     }
     
     section.section{
@@ -112,5 +126,14 @@
         &.full-height{
             min-height: unset !important;
         }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    ul.navbar-nav{
+        background: none;
+        border-radius: 0;
+        position: relative;
+        align-items: flex-end;
     }
 }

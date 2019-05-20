@@ -11,8 +11,8 @@
       width: 100%; }
 
   .navbar-toggler {
-    color: #B80934;
-    border: 1px solid #B80934;
+    color: #f55f87;
+    border: 2px solid #f55f87;
     width: 30px;
     height: 30px;
     padding: 0;
@@ -43,10 +43,22 @@
       padding: 25px; }
 
   .testimonies .testimony .img-container {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  ul.navbar-nav {
+    background: #120C45;
+    z-index: 9;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    align-items: flex-start; } }
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     width: auto; }
+
+  ul.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 100px; }
 
   section.section {
     text-align: left; }
@@ -64,5 +76,11 @@
 @media only screen and (min-width: 768px) and (orientation: portrait) {
   section.section.full-height {
     min-height: unset !important; } }
+@media only screen and (min-width: 992px) {
+  ul.navbar-nav {
+    background: none;
+    border-radius: 0;
+    position: relative;
+    align-items: flex-end; } }
 
 /*# sourceMappingURL=responsive.css.map */

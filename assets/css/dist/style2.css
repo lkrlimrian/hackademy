@@ -42,7 +42,9 @@ nav.navbar {
   align-items: center;
   justify-content: flex-end; }
   .navbar-nav .nav-item {
-    padding: 0 10px; }
+    padding: 0 10px;
+    padding: 15px;
+    }
     .navbar-nav .nav-item a.nav-link {
       color: #f55f87;
       font-family: "Nunito Sans", sans-serif;
