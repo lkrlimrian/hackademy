@@ -8,16 +8,17 @@
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700|Nunito+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/dist/style.css">
+        <link rel="stylesheet" href="assets/css/dist/responsive.css">
     </head>
     <body>
-        <div class="container-fluid list-of-courses">
-            <div class="row">
-                <section class="section header">
-                    <div class="container">
+        <div class="list-of-courses container-fluid">
+            <div class="row nav-container w-100">
+                <div class="container">
+                    <div class="navigation col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#">
-                                <img src="assets/images/logo.png" alt="logo">
+                            <a class="navbar-brand logo" href="#">
+                                <embed src="assets/images/Group 198.svg" type="image/svg+xml" title="hackademy logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggle-icon">
@@ -25,7 +26,7 @@
                                 </span>
                             </button>
                             
-                            <div class="collapse navbar-collapse" id="navigation">
+                            <div class="collapse navbar-collapse pull-right" id="navigation">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
@@ -40,103 +41,112 @@
                                             <a class="nav-link btn-outline" href="#">Enroll Now</a>
                                         </li>
                                     <li class="nav-item">
-                                        <a class="nav-link btn-outline" href="#">0 <i class="fas fa-shopping-cart"></i></a>
+                                        <a class="nav-link btn-outline" href="#">0 <i class="fas fa-shopping-cart"></i><span class="d-md-none pl-2">Cart</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link btn-outline" href="#"><i class="fas fa-user"></i></a>
+                                        <a class="nav-link btn-outline" href="#"><i class="fas fa-user"></i><span class="d-md-none pl-2">Profile</span></a>
                                     </li>
                                 </ul>
                             </div>
-                            </nav>
+                        </nav>
                     </div>
-                    <section class="row section">
-                        <div class="section-title w-100">
-                            <h1 class="text-center">Choose your next adventure</h1>
-                        </div>
-                        <div class="container w-100">
-                            <div class="row">
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="course mint w-100">
-                                            <div class="course-details">
-                                                <div class="img-container">
-                                                        <img src="assets/images/3-codingforhighschool.png" alt="coding">
-                                                    </div>
-                                                <h5 class="course-name">Back End Web Development</h5>
-                                                <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="course orange w-100">
-                                            <div class="course-details">
-                                                <div class="img-container">
-                                                        <img src="assets/images/3-codingforhighschool.png" alt="coding">
-                                                    </div>
-                                                <h5 class="course-name">Front End Web Development</h5>
-                                                <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="course blue w-100">
-                                            <div class="course-details">
-                                                <div class="img-container">
-                                                        <img src="assets/images/3-codingforhighschool.png" alt="coding">
-                                                    </div>
-                                                <h5 class="course-name">Android Development</h5>
-                                                <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                            <div class="course purple w-100">
-                                                <div class="course-details">
-                                                    <div class="img-container">
-                                                            <img src="assets/images/3-codingforhighschool.png" alt="coding">
-                                                        </div>
-                                                    <h5 class="course-name">Back End Web Development</h5>
-                                                    <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique</p>
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="course yellow w-100">
-                                            <div class="course-details">
-                                                <div class="img-container">
-                                                        <img src="assets/images/3-codingforhighschool.png" alt="coding">
-                                                    </div>
-                                                <h5 class="course-name">Front End Web Development</h5>
-                                                <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="course pink w-100">
-                                            <div class="course-details">
-                                                <div class="img-container">
-                                                        <img src="assets/images/3-codingforhighschool.png" alt="coding">
-                                                    </div>
-                                                <h5 class="course-name">Android Development</h5>
-                                                <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
+                </div>
             </div>
-            <section class="row section" id="cta-row">
+            <section class="row section courses-list">
                 <div class="container">
-                    <div class="row">
-                        <div class="col col-lg-12">
-                            <div class="content-wrapper">
-                                <div class="section-title">
-                                    <h1>Take the first step now</h1>
+                    <div class="row row-eq-height">
+                        <div class="col-lg-12">
+                            <h1 class="section-title text-center">Choose your next adventure</h1>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <div class="card course c1">
+                                <div class="course-image-container">
+                                    <div class="wrap">
+                                        <img src="assets/images/1-opencourse.png" alt="django software engineering image">
+                                    </div>
                                 </div>
-                                <button>View Upcoming Courses</button>
+                                <div class="course-description-container">
+                                    <h2 class="course-name">Back End Web Development</h2>
+                                    <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim mollis </p>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 pb-4">
+                            <div class="card course c2">
+                                <div class="course-image-container">
+                                    <div class="wrap">
+                                        <img src="assets/images/1-opencourse.png" alt="django software engineering image">
+                                    </div>
+                                </div>
+                                <div class="course-description-container">
+                                    <h2 class="course-name">Front End Web Development</h2>
+                                    <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim mollis </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <div class="card course c3">
+                                <div class="course-image-container">
+                                    <div class="wrap">
+                                        <img src="assets/images/1-opencourse.png" alt="django software engineering image">
+                                    </div>
+                                </div>
+                                <div class="course-description-container">
+                                    <h2 class="course-name">iOS Development</h2>
+                                    <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim mollis </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <div class="card course c4">
+                                <div class="course-image-container">
+                                    <div class="wrap">
+                                        <img src="assets/images/1-opencourse.png" alt="django software engineering image">
+                                    </div>
+                                </div>
+                                <div class="course-description-container">
+                                    <h2 class="course-name">Adnroid Development</h2>
+                                    <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim mollis </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <div class="card course c5">
+                                <div class="course-image-container">
+                                    <div class="wrap">
+                                        <img src="assets/images/1-opencourse.png" alt="django software engineering image">
+                                    </div>
+                                </div>
+                                <div class="course-description-container">
+                                    <h2 class="course-name">Web and Graphic Design</h2>
+                                    <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim mollis </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pb-4">
+                            <div class="card course c6">
+                                <div class="course-image-container">
+                                    <div class="wrap">
+                                        <img src="assets/images/1-opencourse.png" alt="django software engineering image">
+                                    </div>
+                                </div>
+                                <div class="course-description-container">
+                                <h2 class="course-name">Web Dev Fundamentals</h2>
+                                <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim mollis </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row text-center button-row">
+                    <a href="#" class="btn-link">See More</a>
+                </div>
+            </section>
+            <section class="row section cta-row">
+                <div class="col-lg-12">
+                    <h1 class="section-title text-center">Take the first step now</h1>
+                    <div class="text-center button-row py-0">
+                        <a href="#" class="btn-link">See More Updates</a>
                     </div>
                 </div>
             </section>
@@ -145,29 +155,31 @@
                     <div class="row">
                         <div class="col col-lg-12">
                             <div class="row w-100">
-                                <div class="col col-12 col-lg-3">
+                                <div class="col col-12 col-sm-6 col-lg-3">
                                     <div class="content-wrapper">
-                                        <img src="assets/images/logo.png" alt="logo">
+                                        <div class="logo">
+                                            <embed src="assets/images/Group 199.svg" type="image/svg+xml" title="hackademy logo">
+                                        </div>
                                         <p>an Initiative of Ingenuity Global Consulting, Inc.</p>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-lg-3">
+                                <div class="col col-12 col-sm-6 col-lg-3">
                                     <div class="content-wrapper">
-                                        <h6>About us</h6>
+                                        <h1 class="list-heading">About us</h1>
                                         <p>Through this initiative, students will learn problem-solving and programming skills from professional software engineers, build amazing projects, and together shape the future of our country’s digital economy.</p>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-lg-3">
+                                <div class="col col-12 col-sm-6 col-lg-3">
                                     <div class="content-wrapper">
-                                        <h6>Contact Us</h6>
+                                        <h1 class="list-heading">Contact Us</h1>
                                         <p><i class="fas fa-map-marker-alt"></i>1.8 Centron Building Quirino St. Davao City, Philippines</p>
                                         <p><i class="fas fa-phone"></i>6382 282 4359</p>
                                         <p><i class="fas fa-envelope"></i>info@hackademy.ph</p>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-lg-3">
+                                <div class="col col-12 col-sm-6 col-lg-3">
                                     <div class="content-wrapper">
-                                        <h6>Follow Us</h6>
+                                        <h1 class="list-heading">Follow Us</h1>
                                         <div class="sns">
                                             <a href="#"><i class="fab fa-facebook"></i></a>
                                             <a href="#"><i class="fab fa-twitter-square"></i></a>
