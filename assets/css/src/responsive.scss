@@ -64,12 +64,53 @@
         }
     }
 
+    .testimonies{
+        .testimony{
+            .img-container{
+                margin: 0 auto;
+            }
+        }
+    }
+
 }
 
-.testimonies{
-    .testimony{
-        .img-container{
-            margin: 0 auto;
+@media only screen and (min-width: 768px){
+    .navbar-brand{
+        width: auto;
+    }
+    
+    section.section{
+        text-align: left;
+    }
+
+    .news-list{
+        .news{
+            margin: 0;
+        }
+    }
+
+    .testimonies{
+        .testimony{
+            .img-container{
+                margin: 0;
+            }
+        }
+    }
+
+    footer{
+        .logo{
+            width: 90%;
+            embed{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait){
+    section.section{
+        &.full-height{
+            min-height: unset !important;
         }
     }
 }

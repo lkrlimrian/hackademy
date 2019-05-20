@@ -132,11 +132,15 @@ section.section {
   box-shadow: 0 12px 23px rgba(0, 0, 0, 0.1);
   overflow: hidden; }
   .news-list .news .news-image-container {
-    max-height: 300px; }
+    max-height: 300px;
+    overflow: hidden;
+    }
     .news-list .news .news-image-container img {
       width: 100%;
       object-fit: cover;
-      object-position: center; }
+      object-position: center;
+      /* height: 200px; */
+      }
   .news-list .news .news-title {
     font-family: "IBM Plex Serif", serif;
     font-size: 2rem;
@@ -180,9 +184,7 @@ section.section {
     height: 75px;
     border-radius: 100%;
     overflow: hidden;
-    margin-bottom: 25px;
-    margin: 20px auto;
-    }
+    margin-bottom: 25px; }
   .testimonies .testimony .testimony-details h6 {
     color: #120C45;
     font-family: "IBM Plex Serif", serif;
@@ -220,8 +222,6 @@ footer {
   footer .col {
     align-items: flex-start !important;
     justify-content: flex-start !important; }
-    footer .col .logo embed {
-      width: 90%; }
     footer .col h1.list-heading {
       font-family: "Nunito Sans", sans-serif;
       font-size: 1.5rem;

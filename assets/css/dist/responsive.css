@@ -40,8 +40,29 @@
     .news-list .news h3.news-author {
       font-size: 1rem; }
     .news-list .news div.news-description-container {
-      padding: 25px; } }
-.testimonies .testimony .img-container {
-  margin: 0 auto; }
+      padding: 25px; }
+
+  .testimonies .testimony .img-container {
+    margin: 0 auto; } }
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    width: auto; }
+
+  section.section {
+    text-align: left; }
+
+  .news-list .news {
+    margin: 0; }
+
+  .testimonies .testimony .img-container {
+    margin: 0; }
+
+  footer .logo {
+    width: 90%; }
+    footer .logo embed {
+      width: 100%; } }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  section.section.full-height {
+    min-height: unset !important; } }
 
 /*# sourceMappingURL=responsive.css.map */
