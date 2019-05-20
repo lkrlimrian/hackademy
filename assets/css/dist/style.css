@@ -35,6 +35,16 @@ nav.navbar {
   position: absolute;
   width: 100%;
   top: 0; }
+  nav.navbar .navbar-toggler {
+    color: #120C45;
+    border: 2px solid #120C45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    outline: none; }
 
 .navbar-nav {
   width: 100%;
@@ -42,7 +52,7 @@ nav.navbar {
   align-items: center;
   justify-content: flex-end; }
   .navbar-nav .nav-item {
-    padding: 0 10px; }
+    padding: 15px; }
     .navbar-nav .nav-item a.nav-link {
       color: #120C45;
       font-family: "Nunito Sans", sans-serif;
@@ -52,9 +62,6 @@ nav.navbar {
       border: 1px solid #120C45;
       padding: 10px 15px;
       border-radius: 50px; }
-  .navbar-nav .navbar-toggler {
-    color: #B80934;
-    border: 2px solid #B80934; }
 
 section.banner {
   padding: 250px 0 100px;
@@ -66,7 +73,7 @@ section.banner {
     color: #B80934; }
 
 section.section {
-  padding: 100px 0;
+  padding: 50px 0;
   display: flex;
   align-items: center; }
   section.section.full-height {
@@ -133,15 +140,17 @@ footer {
       font-size: 40px;
       margin-right: 20px; }
 
-.landing .navbar-nav .nav-item a.nav-link {
-  color: #f55f87; }
-.landing .navbar-nav .nav-item a.btn-outline {
-  border: 1px solid #f55f87; }
-.landing .navbar-nav .nav-item ul.navbar-nav {
-  background: #120C45; }
-.landing .navbar-nav .nav-item .navbar-toggler {
+.landing .navbar .navbar-toggler {
   color: #B80934;
   border: 2px solid #B80934; }
+.landing .navbar .navbar-nav {
+  background-color: #120C45; }
+  .landing .navbar .navbar-nav a.nav-link {
+    color: #f55f87; }
+  .landing .navbar .navbar-nav a.btn-outline {
+    border: 1px solid #f55f87; }
+  .landing .navbar .navbar-nav ul.navbar-nav {
+    background: #120C45; }
 .landing .course-list {
   display: flex;
   margin-bottom: 100px; }

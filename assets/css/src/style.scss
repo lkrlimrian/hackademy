@@ -47,6 +47,18 @@ nav.navbar{
     position: absolute;
     width: 100%;
     top: 0;
+
+    .navbar-toggler{
+        color: $secondary-color;
+        border: 2px solid $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        outline: none;
+    }
 }
 
 .navbar-nav{
@@ -56,7 +68,7 @@ nav.navbar{
     justify-content: flex-end;
 
     .nav-item{
-        padding: 0 10px;
+        padding: 15px;
 
         a.nav-link{
             color: $secondary-color;
@@ -72,10 +84,7 @@ nav.navbar{
         }
     }   
 
-    .navbar-toggler{
-        color: $primary-color;
-        border: 2px solid $primary-color;
-    }
+    
 }
 
 section.banner{
@@ -91,7 +100,7 @@ section.banner{
 }
 
 section.section{
-    padding: 100px 0;
+    padding: 50px 0;
     display: flex;
     align-items: center;
 
@@ -198,21 +207,26 @@ footer{
 
 .landing{
 
-    .navbar-nav .nav-item{
-        a.nav-link{
-            color: $primary-light;
-        }
-        a.btn-outline{
-            border: 1px solid $primary-light;
-        }
-
-        ul.navbar-nav{
-            background: $secondary-color;
-        }
-
+    .navbar{
         .navbar-toggler{
             color: $primary-color;
             border: 2px solid $primary-color;
+        }
+
+        .navbar-nav{
+
+            background-color: $secondary-color;
+
+            a.nav-link{
+                color: $primary-light;
+            }
+            a.btn-outline{
+                border: 1px solid $primary-light;
+            }
+    
+            ul.navbar-nav{
+                background: $secondary-color;
+            } 
         }
     }
 

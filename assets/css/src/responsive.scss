@@ -62,11 +62,13 @@
 
     ul.navbar-nav{
         background: $white;
-        padding: 10px 0;
+        // padding: 10px 0;
         z-index: 9;
         border-radius: 0 0 10px 10px;
         position: absolute;
         align-items: flex-start;
+        box-shadow: 0 12px 23px rgba(0,0,0, 0.2);
+        border-top: 5px solid $secondary-color;
     }
 
 }
@@ -80,11 +82,12 @@
         flex-direction: row;
         justify-content: center;
         border-radius: 100px;
+        border: 0;
+        box-shadow: 0 12px 23px rgba(0,0,0,0.2);
     }
     
     section.section{
         text-align: left;
-        padding: 100px 0;
     }
 
     .news-list{
@@ -113,6 +116,7 @@
 
 @media only screen and (min-width: 768px) and (orientation: portrait){
     section.section{
+
         &.full-height{
             min-height: unset !important;
         }
@@ -120,10 +124,22 @@
 }
 
 @media only screen and (min-width: 992px){
+
+    .landing{
+        .navbar ul.navbar-nav{
+            background: none;
+        }
+    }
     ul.navbar-nav{
-        background: none;
+        background: none ;
         border-radius: 0;
         position: relative;
         justify-content: flex-end;
+        box-shadow: none;
+        border: 0;
+    }
+
+    section.section{
+        padding: 100px 0;
     }
 }
