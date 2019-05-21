@@ -8,7 +8,7 @@ body {
   font-weight: 700;
   margin-bottom: 50px; }
 
-p.section-description {
+.section-description {
   margin-bottom: 50px;
   line-height: 1.75; }
 
@@ -73,7 +73,6 @@ section.banner {
     color: #B80934; }
 
 section.section {
-  padding: 50px 0;
   display: flex;
   align-items: center; }
   section.section.full-height {
@@ -121,7 +120,7 @@ footer {
   footer .col {
     align-items: flex-start !important;
     justify-content: flex-start !important; }
-    footer .col h1.list-heading {
+    footer .col .list-heading {
       font-family: "Nunito Sans", sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
@@ -239,7 +238,7 @@ footer {
     border-radius: 100%;
     overflow: hidden;
     margin-bottom: 25px; }
-  .landing .testimonies .testimony .testimony-details h6 {
+  .landing .testimonies .testimony .testimony-details .client-name {
     color: #120C45;
     font-family: "IBM Plex Serif", serif;
     font-weight: bold;
